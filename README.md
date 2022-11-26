@@ -9,8 +9,8 @@ You can quickly build a GPU-accelerated StarNetv2 environment with docker!
 ## Usage
 ### create environment
 ```bash
-docker build -t starnet:latest .
-docker run -it --gpus all -v [HOSTDIR]:/StarNetv2CLI_linux/data starnet:latest bash
+docker pull tskawada/starnet
+docker run -it --gpus all -v [HOSTDIR]:/StarNetv2CLI_linux/data tskawada/starnet:latest bash
 ```
 
 ### run StarNet
