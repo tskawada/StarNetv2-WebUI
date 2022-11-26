@@ -28,7 +28,6 @@ docker run -it --gpus all -v [HOSTDIR]:/StarNetv2CLI_linux/data starnet:latest b
 |   64   |   5922 |     168   |  
 |   32   |  23500 |     626   |  
 |   16   |  93750 |    2442   |  
-|    8   | 375000 |           |  
 
 ## Notes
 - The author is not the creator of StarNet++.
