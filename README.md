@@ -1,7 +1,7 @@
 # StarNetv2-docker
 
 ![Release](https://img.shields.io/github/v/release/tskawada/StarNetv2-docker)
-![License](https://img.shields.io/github/license/tskawada/StarNetv2-docker)
+![License](https://img.shields.io/badge/lisence-MIT-blue)
 ![Image Size](https://img.shields.io/docker/image-size/tskawada/starnet/latest)
 
 You can quickly build a GPU-accelerated StarNetv2 environment with docker!
@@ -31,5 +31,5 @@ docker run -it --gpus all -v [HOSTDIR]:/StarNetv2CLI_linux/data starnet:latest b
 |   16   |  93750 |    2442   |  
 
 ## Notes
-- The author is not the creator of StarNet++.
+- The author is not the creator of StarNetv2.
 - The processing time measurements shown in README are only a guide.
