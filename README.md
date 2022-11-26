@@ -1,4 +1,4 @@
-# StarNet++v2-docker
+# StarNetv2-docker
 
 ![Release](https://img.shields.io/github/v/release/tskawada/starnet++v2-docker)
 ![Image Size](https://img.shields.io/docker/image-size/tskawada/starnet/latest)
