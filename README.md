@@ -1,9 +1,10 @@
 # StarNetv2-docker
 
-![Release](https://img.shields.io/github/v/release/tskawada/starnet++v2-docker)
+![Release](https://img.shields.io/github/v/release/tskawada/StarNetv2-docker)
+![License](https://img.shields.io/github/license/tskawada/StarNetv2-docker)
 ![Image Size](https://img.shields.io/docker/image-size/tskawada/starnet/latest)
 
-You can quickly build a GPU-accelerated StarNet++ environment with docker!
+You can quickly build a GPU-accelerated StarNetv2 environment with docker!
 
 ## Usage
 ### create environment
