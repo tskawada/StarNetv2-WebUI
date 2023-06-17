@@ -4,21 +4,21 @@
 ![License](https://img.shields.io/badge/lisence-MIT-blue)
 ![Image Size](https://img.shields.io/docker/image-size/tskawada/starnet/latest)
 
-You can quickly build a GPU-accelerated StarNetv2 environment with docker!
+You can quickly build a GPU-accelerated StarNetv2 environment and its Web UI!
 
 ## Usage
-### create environment
-```bash
-docker pull tskawada/starnet
-docker run -it --gpus all -v [HOSTDIR]:/StarNetv2CLI_linux/data tskawada/starnet:latest bash
-```
+1. create environment
+    ```bash
+    git clone https://github.com/tskawada/StarNetv2-docker.git
+    cd StaNetv2-docker
+    docker-compose up -d
+    ```
 
-### run StarNet
-```bash
-./starnet++ data/input.tif data/output.tif [STRIDE]
-```
+2. access the web ui  
+    http://localhost:3000
 
-#### STRIDE value and processing time
+
+## STRIDE value and processing time
 - NVIDIA GeForce 3090Ti  
 - 6000x4000 16bit tiff  
 
