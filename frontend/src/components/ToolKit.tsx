@@ -9,6 +9,7 @@ import {
 import CircularProgress from '@mui/material/CircularProgress';
 import { useState, useRef, Dispatch, SetStateAction } from 'react'
 import { uploadFile, starless, download } from './logics'
+import useSound from 'use-sound';
 
 type ToolKitProps = {
   rawImage: string | undefined;
@@ -22,6 +23,7 @@ const ToolKit = ({ rawImage, starlessImage, setRawImage, setStarlessImage }: Too
   const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [tiffName, setTiffName] = useState("");
+  const [play] = useSound("./assets/sounds/complete.ogg")
 
   const handleStrideChange = (event: SelectChangeEvent<typeof stride>) => {
     setStride(event.target.value as number);
@@ -36,6 +38,7 @@ const ToolKit = ({ rawImage, starlessImage, setRawImage, setStarlessImage }: Too
       setIsLoading(true)
       setStarlessImage(await starless(stride))
       setIsLoading(false)
+      play()
     } else {
       alert("Please wait for the current process to finish.")
     }
