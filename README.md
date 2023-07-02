@@ -1,6 +1,6 @@
-# StarNetv2-docker
+# StarNetv2-WebUI
 
-![Release](https://img.shields.io/github/v/release/tskawada/StarNetv2-docker)
+![Release](https://img.shields.io/github/v/release/tskawada/StarNetv2-WebUI)
 ![License](https://img.shields.io/badge/lisence-MIT-blue)
 ![Image Size](https://img.shields.io/docker/image-size/tskawada/starnet/latest)
 
@@ -9,8 +9,8 @@ You can quickly build a GPU-accelerated StarNetv2 environment and its Web UI!
 ## Usage
 1. create environment
     ```bash
-    git clone https://github.com/tskawada/StarNetv2-docker.git
-    cd StaNetv2-docker
+    git clone https://github.com/tskawada/StarNetv2-WebUI.git
+    cd StaNetv2-WebUI
     docker-compose up -d
     ```
 
