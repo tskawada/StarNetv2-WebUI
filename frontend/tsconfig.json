@@ -23,6 +23,5 @@
   "include": [
     "src",
     "src/**/*.ts",
-    "src/audio.d.ts",
   ]
 }
