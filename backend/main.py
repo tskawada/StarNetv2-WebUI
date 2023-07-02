@@ -1,8 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
-from fastapi.responses import FileResponse 
+from fastapi.responses import FileResponse
 from starlette.middleware.cors import CORSMiddleware
 from PIL import Image
-import io
 from datetime import datetime
 import os
 import subprocess as sp
@@ -14,9 +13,9 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,   
+    allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"] 
+    allow_headers=["*"],
 )
 
 
